@@ -1,6 +1,7 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <errno.h>
+#include <stdlib.h>
 
 #ifdef _WIN32
 #include <windows.h>
@@ -136,7 +137,7 @@ int main(int argc, char **argv) {
   }
 
 
-  // Отобразить карту
+  // Отобразить карту (для корректного отображения в терминале отключите автоматический перенос строк)
 #if DEBUG_MAP
   rewind(file_coords);
   while (fgets(line_text, sizeof line_text, file_coords) != NULL) {
