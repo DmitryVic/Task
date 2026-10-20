@@ -153,7 +153,7 @@ int main(int argc, char **argv) {
 
 
   printf("Строк в файле: %d \n", line_count);
-  for (size_t print_x = 0; print_x < HEIGHT; print_x++) {
+  for (size_t print_x = 0; print_x < WIDTH; print_x++) {
     for (size_t print_y = 0; print_y < HEIGHT; print_y++) {
       if (best_point.point.x == print_x && best_point.point.y == print_y)
         printf("\x1b[31m[X]\x1b[0m");
